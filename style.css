@@ -1,0 +1,624 @@
+/* ### Primary
+
+- White: hsl(0, 0%, 100%)
+- Black: hsl(0, 0%, 0%)
+- Dark Gray: hsl(0, 0%, 55%)
+- Very Dark Gray: hsl(0, 0%, 41%)
+ */
+
+ @import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+.header{
+    background: url("./loopstudios-landing-page-main/images/mobile/image-hero.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    position: relative;
+}
+
+.logo {
+z-index: 1111111111;
+padding: 20px 0 0 30px;
+width: 50%;
+}
+
+.logo img{
+    width:60%;
+}
+
+.intro{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.nav-bar{
+    background:black ;
+    height: 100vh;
+    position: fixed;
+    width: 100vw;
+    margin: 0 0 0 0;
+    z-index: 10;
+    display: none;
+    padding:100px 0 0 30px;
+}
+
+.nav-bar ul{
+    margin: 120px 0 0 0;
+}
+
+.nav-bar ul li{
+    list-style-type: none;
+}
+
+.nav-bar ul li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding-top: 25px;
+    font-family: 'Josefin Sans', sans-serif;
+font-weight: 300;
+}
+
+#check{
+    display: none;
+}
+
+label #btn,label #cancel{
+    position: absolute;
+}
+
+label #btn{
+    top: 20px;
+    left: 80%;
+    z-index: 1;
+}
+
+label #cancel{
+    top: 20px;
+    left: 80%;
+    z-index: 11111;
+    display: none;
+}
+
+#check:checked ~ label #btn{
+    display: none;
+}
+
+#check:checked ~ label #cancel{
+    display: block;
+}
+
+#check:checked ~ .nav-bar{
+    display: block;
+}
+
+.immersive{
+    color: white;
+    margin-top: 150px ;
+    margin-left: 50px;
+    margin-right: 50px;
+      border: 2px solid white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Alata', sans-serif;
+    font-weight: 400;
+} 
+
+.body{
+    margin: 30px;
+}
+
+/* *************INTERACTIVE******* */
+.virtual{
+    margin-top: 70px;
+}
+
+.virtual-img{
+  background: url("./loopstudios-landing-page-main/images/mobile/image-interactive.jpg");
+  height: 350px;  
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+
+.vr{
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+
+.vr h1{
+    font-family: 'Alata', sans-serif;
+    font-weight: 400;
+     
+}
+.vr p{
+    line-height: 24px;
+    color:hsl(0, 0%, 55%) ;
+    margin-top: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* ************ CREATIONS******** */
+.title{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.title h1{
+    font-family: 'Alata', sans-serif;
+    font-weight: 400;
+}
+
+.creation-items h3{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.deep{
+    background: url("./loopstudios-landing-page-main/images/mobile/image-deep-earth.jpg");
+    height: 100px;  
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+.deep h3{
+    width: 30%;
+    padding: 20px;
+    transform: translateY(10%);
+    color: white;
+}
+
+.night{
+    background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("./loopstudios-landing-page-main/images/mobile/image-night-arcade.jpg");
+    height: 100px;  
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+.night h3{
+    width: 30%;
+    padding: 20px;
+    transform: translateY(10%);
+    color: white;
+}
+
+.soccer{
+    background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("./loopstudios-landing-page-main/images/mobile/image-soccer-team.jpg");
+    height: 100px;  
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+.soccer h3{
+    width: 50%;
+    padding: 20px;
+    transform: translateY(10%);
+    color: white;
+}
+
+.grid{
+    background: url("./loopstudios-landing-page-main/images/mobile/image-grid.jpg");
+    height: 100px;  
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+.grid h3{
+    width: 30%;
+    padding: 20px;
+    transform: translateY(10%);
+    color: white;
+}
+
+.up{
+    background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("./loopstudios-landing-page-main/images/mobile/image-from-above.jpg");
+    height: 100px;  
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+.up h3{
+    width: 40%;
+    padding: 20px;
+    transform: translateY(10%);
+    color: white;
+}
+
+.curiosity{
+    background: url("./loopstudios-landing-page-main/images/mobile/image-curiosity.jpg");
+    height: 100px;  
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+.curiosity h3{
+    width: 30%;
+    padding: 20px;
+    transform: translateY(10%);
+    color: white;
+}
+
+.fish{
+    background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("./loopstudios-landing-page-main/images/mobile/image-fisheye.jpg");
+    height: 100px;  
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+.fish h3{
+    width: 50%;
+    padding: 20px;
+    transform: translateY(10%);
+    color: white;
+}
+
+.pocket{
+    background: url("./loopstudios-landing-page-main/images/mobile/image-pocket-borealis.jpg");
+    height: 100px;  
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+.pocket h3{
+    width: 30%;
+    padding: 20px;
+    transform: translateY(10%);
+    color: white;
+}
+
+.button{
+    background: transparent;
+    padding: 10px 25px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 70px auto;
+    letter-spacing: 1.5px;
+}
+
+.btn-2{
+    display: none;
+    padding: 10px 25px;
+    letter-spacing: 1.5px;
+    background: transparent;
+}
+
+/* ***************FOOTER********** */
+.footer{
+    background:black ;
+    padding: 30px;
+}
+
+.footer-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.logo-2{
+    margin-top: 30px;
+}
+
+.links ul li{
+    list-style-type: none;
+    padding-top: 15px;
+}
+
+.links ul li a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+}
+
+.footer-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top:50px ;   
+}
+
+.icons img{
+    margin-right: 15px;
+}
+
+.copyright{
+    color: hsl(0, 0%, 55%);
+    margin-top: 20px;
+    margin-bottom: 30px; font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+}
+@media screen and (min-width:768px) {
+/* *********HEADER********** */
+    .logo {
+        padding: 50px 0 0 30px;
+        width: 50%;
+        margin-left: 80px;
+        }
+
+    .intro{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-bar{
+        background:none ;
+        height: initial;
+        position: initial;
+        width: initial;
+        margin: 0 0 0 0;
+        display: block;
+        padding:initial;
+    }
+
+    .nav-bar ul{
+        display: flex;
+        margin-right:100px;
+        margin-top: 0;
+    }
+    
+    .nav-bar ul li{
+        list-style-type: none;
+        padding-left: 25px;
+    }
+    
+    
+    label #cancel, label #btn{
+        display: none;
+    }
+    
+    .immersive{
+        color: white;
+        margin-top: 100px ;
+        margin-left: 100px;
+        margin-right: 70%;
+        border: 2px solid white;
+        padding: 30px 20px 30px 60px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        line-height: 30px;
+        font-size: 30px;
+    } 
+
+
+    /* *************VIRTUAL********** */
+
+    .virtual{
+        display: flex;
+        margin-bottom: 100px;
+        position: relative;
+    }
+    
+    .virtual-img{
+      background: url("./loopstudios-landing-page-main/images/desktop/image-interactive.jpg");
+      height: 400px;  
+      background-position: center;
+      background-size: cover;
+      width: 63%;
+    }
+
+    .vr{
+        background-color: white;
+        width: 37%;
+        text-align: left;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 60px 0px 10px 70px;
+        height: 250px;
+        position: absolute;
+        bottom: 0;
+        right: 100px;
+        
+    }
+
+    .vr h1{
+        width: 60%;
+    }
+
+   
+
+    /* *******************CREATIONS************** */
+    .title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        margin-bottom: 100px;
+    }
+
+    .btn-2{
+        display: block;
+    }
+
+    .button{
+        display: none;
+    }
+
+    .creation-items{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 20px;
+    }
+
+    .deep{
+        background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("./loopstudios-landing-page-main/images/desktop/image-deep-earth.jpg");
+        height: 500px;  
+        background-position: center;
+        background-size: cover;
+        margin-bottom: 20px;
+    }
+    
+    .deep h3{
+        width: 30%;
+        padding: 30px;
+        transform: translateY(400px);
+        color: white;
+    }
+
+    .night{
+        background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("./loopstudios-landing-page-main/images/desktop/image-night-arcade.jpg");
+        height: 500px;  
+        background-position: center;
+        background-size: cover;
+        margin-bottom: 20px;
+    }
+    
+    .night h3{
+        width: 30%;
+        padding: 30px;
+        transform: translateY(400px);
+        color: white;
+    }
+
+    .soccer{
+        background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("./loopstudios-landing-page-main/images/desktop/image-soccer-team.jpg");
+        height: 500px;  
+        background-position: center;
+        background-size: cover;
+        margin-bottom: 20px;
+    }
+    
+    .soccer h3{
+        width: 50%;
+        padding: 30px;
+        transform: translateY(400px);
+        color: white;
+    }
+
+    .up{
+        background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("./loopstudios-landing-page-main/images/desktop/image-from-above.jpg");
+        height: 500px;  
+        background-position: center;
+        background-size: cover;
+        margin-bottom: 20px;
+    }
+    
+    .up h3{
+        width: 60%;
+        padding: 30px;
+        transform: translateY(400px);
+        color: white;
+    }
+
+    .grid{
+        background: url("./loopstudios-landing-page-main/images/desktop/image-grid.jpg");
+        height: 500px;  
+        background-position: center;
+        background-size: cover;
+        margin-bottom: 20px;
+    }
+    
+    .grid h3{
+        width: 30%;
+        padding: 30px;
+        transform: translateY(400px);
+        color: white;
+    }
+
+    .fish{
+        background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("./loopstudios-landing-page-main/images/desktop/image-fisheye.jpg");
+        height: 500px;  
+        background-position: center;
+        background-size: cover;
+        margin-bottom: 20px;
+    }
+    
+    .fish h3{
+        width: 50%;
+        padding: 30px;
+        transform: translateY(400px);
+        color: white;
+    }
+
+    .curiosity{
+        background: url("./loopstudios-landing-page-main/images/desktop/image-curiosity.jpg");
+        height: 500px;  
+        background-position: center;
+        background-size: cover;
+        margin-bottom: 20px;
+    }
+    
+    .curiosity h3{
+        width: 30%;
+        padding: 30px;
+        transform: translateY(400px);
+        color: white;
+    }
+
+    .pocket{
+        background: url("./loopstudios-landing-page-main/images/desktop/image-pocket-borealis.jpg");
+        height: 500px;  
+        background-position: center;
+        background-size: cover;
+        margin-bottom: 20px;
+    }
+    
+    .pocket h3{
+        width: 30%;
+        padding: 30px;
+        transform: translateY(400px);
+        color: white;
+    }
+
+    /* *****************FOOTER*********** */
+    .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 30px 100px;
+    }
+    .footer-1{
+        text-align: left;
+        display: block;
+    }
+
+    .links ul {
+        display: flex;
+    }
+
+    .links ul li{
+        margin-left: 20px;
+    }
+
+    .links ul li:nth-child(1){
+        margin-left: initial;
+    }
+
+    .footer-2{
+        text-align: right;
+        display: block;
+    }
+
+    .body{
+        margin: 100px;
+}
+}
